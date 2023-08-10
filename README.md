@@ -1,19 +1,39 @@
-# modulo_2
-Entrega individual módulo 2 Recode Pro
 
-Descrição da entrega
+# Recode Pro 2023
 
-Usando conceitos de programação estruturada (Vetor), criar em pseudocódigo um menu 
-para simular um cadastro para uma agência de viagens com as 
-seguintes funções: cadastro de cliente e cadastro de destino, criar também uma 
+Usando conceitos de programação estruturada (Vetor), criei em pseudocódigo um menu para simular um cadastro para uma agência de viagens com as funções: cadastro de cliente e cadastro de destino, desenvolvi também uma 
 consulta para cada estrutura de dados. 
 
-Usando HTML / CSS / BOOTSTRAP: 
 
-Criar um protótipo da primeira versão do site; 
 
-Criar as páginas: Home, Destino, Promoções, Contato e as demais páginas de acordo com seu modelo de negócio. Usando HTML, CSS e BOOTSTRAP; 
+## 🛠 Tecnologias 
 
-As páginas devem ser responsivas ou adaptáveis. 
+- HTML
 
- Faça as formatações de acordo com a paleta de cores escolhida. 
+- CSS
+
+- Bootstrap
+
+- Javascript
+
+
+
+## 💻 Detalhes do Projeto
+
+
+
+Agência Kaioken é uma agência de viagens virtual ficticia 
+
+Projeto desenvolvido durante o curso formação [Programador FullStack - Recode Pro 2023](https://recodepro.org.br/) .
+
+
+## 🔍 Referências
+
+- [W3Schools](https://www.w3schools.com/)
+- [Recode](https://recodepro.org.br/)
+- [MDN](https://developer.mozilla.org/pt-BR/docs/Web)
+
+
+
+
+
