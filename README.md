@@ -2,7 +2,7 @@
 # Recode Pro 2023
 
 Usando conceitos de programação estruturada (Vetor), criei em pseudocódigo um menu para simular um cadastro para uma agência de viagens com as funções: cadastro de cliente e cadastro de destino, desenvolvi também uma 
-consulta para cada estrutura de dados. 
+consulta para cada estrutura de dados, e também um site para a agência combinando html, css e bootstrap.
 
 
 
