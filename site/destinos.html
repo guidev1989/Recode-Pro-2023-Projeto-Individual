@@ -2,92 +2,373 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Agência Kaioken</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Agência Kaioken</title>
 </head>
 
-<body>
-    <div class="container">
+<body class="container">
+  <header class="container col-auto m-auto rounded-3" >
+    <nav class="navbar container">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo02.png" alt="Logo" width="300" height="240" class="d-inline-block align-text-top">
 
-        <nav class="navbar bg-body-tertiary container">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo02.png" alt="Logo" width="300" height="240" class="d-inline-block align-text-top">
-                </a>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link " href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="destinos.html">Destinos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="promo.html">Promoções</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contato.html">Contato</a>
-                                </li>
+        </a>
 
-
-                            </ul>
+        <ul class="nav navbar-expand-lg ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="promo.html">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="abrirModal" href="#">Área do Viajante</a>
+            <div id="meuModal" class="modal">
+              <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <div class="container mt-5">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-header">Login</div>
+                        <div class="card-body">
+                          <form>
+                            <div class="form-group mb-3">
+                              <label for="usuario">E-mail</label>
+                              <input type="text" class="form-control" id="usuario" placeholder="Digite seu E-mail">
+                            </div>
+                            <div class="form-group mb-3">
+                              <label for="senha">Senha</label>
+                              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mb-3">Entrar</button>
+                            <p>Não tem cadastro? Faça o seu <a href="./area-viajante.html">aqui</a></p>
+                          </form>
 
                         </div>
-                    </div>
-                </nav>
-            </div>
-        </nav>
+                      </div>
+        </ul>
 
-        <div class="container ">
-            <div class="row">
-        <div class=" container card" style="width: 18rem;">
-            <img src="..//imagens/japao_card.png" class=" p-2  card-img-top" alt="japao">
-            <div class="card-body">              
-              <p class="card-text">Tudo o que você precisa para a sua viagem ao Japão</p>
-              <a href="#" class="btn btn-primary">Viaje agora!</a>
-            </div>
+    </nav>
+
+
+
+
+  </header>
+
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card mt-1" style="width: 16rem;">
+          <img src="./img/card01.jpg" style="height: 23em ; class="card-img-top" alt="card01">
+          <div class="card-body">
+            <h5 class="card-title">Tóquio</h5>
+            <p class="card-text">🌸 Explore a metrópole futurista de Tóquio, onde tradição e inovação se encontram. 🌸</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard01">
+              Saiba Mais
+          </button>
           </div>
-
-          <div class="card container" style="width: 18rem;">
-            <img src="img/roma_card.png" class="card-img-top" alt="roma">
-            <div class="card-body">
-              <p class="card-text">Sua viagem para Itália com as melhores condições</p>
-              <a href="#" class="btn btn-primary">Viaje agora!</a>
-            </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mt-1" style=" width: 16rem; ">
+          <img src="./img/card02.jpg" style="height: 23em ;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kyoto</h5>
+            <p class="card-text">🌸 Seja transportado para o coração do Japão, onde a tradição e a serenidade aguardam por você. 🌸</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard02">
+              Saiba Mais
+          </button>
           </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mt-1" style="width: 16rem;">
+          <img src="./img/card03.jpg" style="height: 23em ; class=" card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hokkaido</h5>
+            <p class="card-text">🏔️ Embarque em uma jornada única à ilha de Hokkaido, onde a natureza  e a cultura vibrante se encontram. 🏔️</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard03">
+                Saiba Mais
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mt-1" style="width: 16rem;">
+          <img src="./img/card04.jpg" style="height: 23em; class=" card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Okinawa</h5>
+            <p class="card-text">🏝️ Conheça as águas cristalinas e praias de Okinawa, onde a natureza exuberante e a cultura o aguardam. 🏝️</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard04">
+              Saiba Mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="card container" style="width: 18rem;">
-            <img src="img/franca_card.png" class="card-img-top" alt="frança">
-            <div class="card-body">              
-              <p class="card-text">Sua próxima viagem para França começa aqui</p>
-              <a href="#" class="btn btn-primary">Viaje agora!</a>
+  <div class="modal fade" id="modalCard01" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalSaibaMaisLabel">Descubra a Magia de Tóquio com Nossa Oferta Especial!</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
-          </div> 
-          
-          
-            
+            <div class="modal-body">
+                <!-- Insira o texto gerado aqui -->
+                <p class="container lead text-left">🌸 Explore a metrópole futurista de Tóquio, onde tradição e inovação se encontram. 🌸 <br>
+                  <br>
+
+                  Junte-se a nós nesta <strong>emocionante jornada</strong> à capital do Japão, onde você vivenciará a harmonia perfeita entre o antigo e o moderno. Passeie pelas ruas movimentadas de Shinjuku, maravilhe-se com os templos históricos em Asakusa e desfrute da gastronomia única da cidade. <br> <br>
+                  
+                  ✔️ Pacote Inclui:
+
+
+                  <ul class="list-group m-2 w-75 container lead text-left">
+                    <li class="list-group-item ">✈️ Passagens aéreas de ida e volta</li>
+                    <li class="list-group-item">🏯 Acomodações luxuosas em um hotel de renome</li>
+                    <li class="list-group-item">🚌 Excursões guiadas pelos principais pontos turísticos</li>
+                    <li class="list-group-item">🍣 Degustações de pratos japoneses autênticos</li>
+                    <li class="list-group-item">🗼 Experiências culturais únicas</li>
+                  </ul>
+                  <br>
+                </p>
+                <p class="container lead text-left">
+                   Não perca esta oportunidade de explorar <strong>Tóquio</strong>  como nunca antes! <strong>Reserve seu lugar agora</strong> e embarque nesta aventura inesquecível. <br>
+
+                   <strong>Tóquio espera por você</strong>. Viva a experiência! 
+                  </p> 
+                  <div class="container">
+                  <button type="button" class="btn btn-primary justify-content-center">Faça sua reserva</button>
+                </div>
+
+
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
         </div>
     </div>
-        </div>
-    
+</div>
+
+<div class="modal fade" id="modalCard02" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="modalSaibaMaisLabel">Explore a Essência de Kyoto: Uma Experiência Inesquecível!</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Insira o texto gerado aqui -->
+              <p class="container lead text-left">🌸 Seja transportado para o coração do Japão, onde a tradição e a serenidade aguardam por você. 🌸
+                <br>
+                <br>
+
+                Venha conosco nesta <strong>viagem mágica a Kyoto</strong>, a antiga capital imperial do Japão. Passeie por bosques de bambu, admire os templos históricos e mergulhe na cultura japonesa autêntica. <br> <br>
+                
+                ✔️ Pacote Inclui:
+
+
+                <ul class="list-group m-2 w-75 container lead text-left">
+                  <li class="list-group-item ">✈️ Passagens aéreas de ida e volta</li>
+                  <li class="list-group-item">🏯 Hospedagem em ryokans tradicionais.</li>
+                  <li class="list-group-item">🚌 Passeios a templos icônicos, como o Kinkaku-ji (Pavilhão Dourado).</li>
+                  <li class="list-group-item">🍣 Delicie-se com a culinária japonesa em restaurantes locais.</li>
+                  <li class="list-group-item">🌳 Passeio relaxante pelos Jardins de Gion.</li>
+                </ul>
+                <br>
+              </p>
+              <p class="container lead text-left">
+                Não perca a chance de <strong>vivenciar a tranquilidade e a beleza de Kyoto</strong>. Reserve agora e embarque nessa aventura única. <br>
+
+                <strong>Kyoto espera por você</strong>. Sinta a autenticidade! 
+                </p> 
+                <div class="container">
+                <button type="button" class="btn btn-primary justify-content-center">Faça sua reserva</button>
+              </div>
+
+
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard03" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="modalSaibaMaisLabel">Hokkaido Revelado: Sua Aventura no Norte do Japão</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Insira o texto gerado aqui -->
+              <p class="container lead text-left">🏔️ Embarque em uma jornada única e inesquecível à pitoresca ilha de Hokkaido, onde a natureza intocada e a cultura vibrante se encontram. 🏔️
+                <br>
+                <br>
+
+                Nossa agência de viagens convida você a <strong>explorar este tesouro escondido</strong> no extremo norte do Japão. Descubra as vastas paisagens montanhosas, os lagos de águas cristalinas e as aldeias tradicionais que tornam <strong>Hokkaido tão especial</strong>.
+                 <br>
+                 <br>
+                
+                ✔️ Pacote Inclui:
+
+
+                <ul class="list-group m-2 w-75 container lead text-left">
+                  <li class="list-group-item ">✈️ Passagens aéreas de ida e volta</li>
+                  <li class="list-group-item">🌨️ Hospedagem em chalés aconchegantes.</li>
+                  <li class="list-group-item">🚢 Cruzeiro cênico pelos Fiordes de Shiretoko.</li>
+                  <li class="list-group-item">🥢 Degustações de frutos do mar frescos e delícias locais.</li>
+                  <li class="list-group-item">🐾 Encontros com a vida selvagem, como grizzly e raposas-do-ártico.</li>
+                </ul>
+                <br>
+              </p>
+              <p class="container lead text-left">
+                Reserve sua vaga agora e prepare-se para a aventura de uma vida. <br>
+
+                <strong>Hokkaido espera por você</strong>. Viva a autenticidade! 
+                </p> 
+                <div class="container">
+                <button type="button" class="btn btn-primary justify-content-center">Faça sua reserva</button>
+              </div>
+
+
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard04" tabindex="-1" aria-labelledby="modalSaibaMaisLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="modalSaibaMaisLabel">Descubra o Paraíso em Okinawa: Uma Jornada de Maravilhas Tropicais!</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Insira o texto gerado aqui -->
+              <p class="container lead text-left">🏝️ Deixe-se levar pelas águas cristalinas e praias de areia branca de Okinawa, onde a natureza exuberante e a cultura cativante o aguardam. 🏝️
+                <br>
+                <br>
+
+                Nossa agência de viagens convida você a <strong>explorar este paraíso tropical no sul do Japão</strong>. Mergulhe em um mundo de cores vibrantes sob as ondas, sinta a brisa suave e relaxe em praias intocadas.
+                 <br>
+                 <br>
+                
+                ✔️ Pacote Inclui:
+
+
+                <ul class="list-group m-2 w-75 container lead text-left">
+                  <li class="list-group-item ">✈️ Passagens aéreas de ida e volta</li>
+                  <li class="list-group-item">🌞 Hospedagem em resorts de luxo à beira-mar.</li>
+                  <li class="list-group-item">🐠 Snorkeling e mergulho em recifes de coral deslumbrantes.</li>
+                  <li class="list-group-item">🏄‍♂️ Esportes aquáticos emocionantes, como surf e paddleboarding.</li>
+                  <li class="list-group-item">🍹 Degustação de iguarias locais e coquetéis tropicais.</li>
+                  <li class="list-group-item">🌅 Passeios ao pôr do sol em praias pitorescas.</li>
+                </ul>
+                <br>
+              </p>
+              <p class="container lead text-left">
+                Reserve agora e deixe Okinawa encantar você com sua beleza natural <br> e hospitalidade calorosa. <br>
+                <br>
+
+                <strong>Okinawa espera por você</strong>. Viva o paraíso! 
+                </p> 
+                <div class="container">
+                <button type="button" class="btn btn-primary justify-content-center">Faça sua reserva</button>
+              </div>
+
+
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
+  <div class="container footer p-5 font-weight-normal  ">
 
+    <footer class="container p-3 rounded-3 custom-width ">
+      <br>
+      Site criado por <a target="_blank" class="text-decoration-none text-white" href="https://github.com/guidev1989">
+        Guilherme Oliveira </a> - Recode Pro 2023
+
+      <br> <br>
+
+      <a class="git" href="https://github.com/guidev1989/Recode-Pro-2023-Projeto-Individual" target="_blank"
+        rel="github-repositorio">
+        <img src="img/github.svg" alt="">
+
+      </a>
+
+      <a href="#">
+        <img src="img/instagram.svg" alt="">
+      </a>
+
+      <a href="https://www.linkedin.com/in/gui-oliveira-041472280/" target="_blank" rel="linkedin">
+        <img src="img/linkedin.svg" alt="">
+
+      </a>
+
+      <a href="mailto:guidev1989@gmail.com?subject=&body=">
+
+        <img src="img/send-mail.svg" alt="">
+
+      </a>
     </div>
+      
+    </footer>
 
-    <p class="container footer p-5 font-weight-normal"> Site criado por <a target="_blank" class="text-decoration-none text-dark" href="https://github.com/guidev1989"> Guilherme Oliveira </a>  - Recode Pro 2023 </p>
+  
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+
+  <script>
+    var linkAbrirModal = document.getElementById('abrirModal');
+    var modal = document.getElementById('meuModal');
+
+    // Quando o link é clicado, mostra o modal
+    linkAbrirModal.addEventListener('click', function () {
+      modal.style.display = 'block';
+    });
+
+    // Quando o usuário clica no botão "Fechar" ou fora do modal, fecha o modal
+    modal.addEventListener('click', function (event) {
+      if (event.target === modal || event.target.className === 'fechar') {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
