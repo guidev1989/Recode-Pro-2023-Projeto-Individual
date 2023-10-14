@@ -4,6 +4,8 @@
 Usando conceitos de programação estruturada (Vetor), criei em pseudocódigo um menu para simular um cadastro para uma agência de viagens com as funções: cadastro de cliente e cadastro de destino, desenvolvi também uma 
 consulta para cada estrutura de dados, e também um site para a agência combinando html, css e bootstrap.
 
+Acesse o site clicando [aqui](https://guidev1989.github.io/Recode-Pro-2023-Projeto-Individual)
+
 
 
 ## 🛠 Tecnologias 
