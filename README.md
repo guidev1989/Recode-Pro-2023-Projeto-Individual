@@ -18,6 +18,8 @@ Acesse o site clicando [aqui](https://guidev1989.github.io/Recode-Pro-2023-Proje
 
 - Javascript
 
+- Java
+
 
 
 ## 💻 Detalhes do Projeto
