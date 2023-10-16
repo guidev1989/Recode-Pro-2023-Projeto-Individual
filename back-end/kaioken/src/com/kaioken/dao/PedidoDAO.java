@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.kaioken.model.Pedido;
+import com.kaioken.model.Usuario;
 
 public class PedidoDAO {
 
@@ -39,7 +40,7 @@ public class PedidoDAO {
 				ResultSet r = stmt.executeQuery();
 				while(r.next()) {				
 					Pedido pedido = new Pedido();
-					//pedido.setId_pedido(r.getInt("id_pedido"));
+					pedido.setId_pedido(r.getInt("id_pedido"));
 					pedido.setStatus_pedido(r.getString("status_pedido"));	
 					
 					pedido.setData_ida(r.getString("data_ida"));
@@ -57,6 +58,40 @@ public class PedidoDAO {
 			}
 	
 		
+		}
+		
+		//UPDATE
+		public void updatePedido(Pedido pedido) {
+			sql="UPDATE pedido SET status_pedido = ?, data_ida = ?, data_volta = ?, num_viajantes = ? WHERE id_pedido = ?";
+			try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+				stmt.setString(1, pedido.getStatus_pedido() );			
+				stmt.setString(2, pedido.getData_ida());
+				stmt.setString(3, pedido.getData_volta());
+				stmt.setString(4, pedido.getNum_viajantes());			
+				
+				stmt.setInt(5, pedido.getId_pedido());
+				
+				stmt.executeUpdate();
+				
+				
+			}catch (SQLException e) {
+				System.out.println(e.getMessage());
+							
+			}
+			
+		}
+		
+		//DELETE
+		
+		public void deletePedido(int id) {
+			sql = "DELETE from pedido WHERE id_pedido = ?";
+			try(PreparedStatement stmt = connection.prepareStatement(sql)){
+				stmt.setInt(1, id);
+				
+				stmt.executeUpdate();			
+			} catch (SQLException e) {
+				System.out.println(e.getMessage());
+			}
 		}
 }
 

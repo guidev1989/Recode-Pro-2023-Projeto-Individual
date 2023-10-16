@@ -63,7 +63,7 @@ public class UsuarioDAO {
 	
 	//UPDATE
 	public void updateUsuario(Usuario usuario) {
-		sql="UPDATE usuario SET nome= ?, cpf = ?, telefone = ?, email = ? WHERE id_usuario = ?";
+		sql="UPDATE usuario SET telefone= ?, cpf = ?, email = ?, nome = ? WHERE id_usuario = ?";
 		try (PreparedStatement stmt = connection.prepareStatement(sql)) {
 			stmt.setString(1, usuario.getTelefone() );			
 			stmt.setString(2, usuario.getCpf());

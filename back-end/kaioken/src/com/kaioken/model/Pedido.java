@@ -11,6 +11,26 @@ public class Pedido {
 	private String data_volta;
 	
 	private String num_viajantes;
+	
+	public Pedido(String status_pedido, String data_ida, String data_volta, String num_viajantes) {
+		super();
+		this.status_pedido = status_pedido;
+		this.data_ida = data_ida;
+		this.data_volta = data_volta;
+		this.num_viajantes = num_viajantes;
+	}
+	
+	@Override
+	public String toString() {
+		return "Pedido [id_pedido=" + id_pedido + ", status_pedido =" + status_pedido + ", data_ida =" + data_ida + ", data_volta=" + data_volta
+				+ ", num_viajantes=" + num_viajantes + "]";
+	}
+
+
+	public Pedido() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public int getId_pedido() {
 		return id_pedido;
