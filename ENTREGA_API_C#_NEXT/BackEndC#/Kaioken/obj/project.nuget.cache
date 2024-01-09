@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f7WtT16kNb4Bfr7LEimzx9NCEwLY8587LDYj4Ec0WsSAvMJfnNVsO7Un8CC8DB3GquRyn67x3Gb6LaiKtFeLpA==",
+  "dgSpecHash": "ahiv0Rg62zUWl4N53Bd5i94+pLSaHynqRZtCtDI73DwSdkRQVo7czHIv0XCa0lgVUIy81k2Quxm1XsVYWJwLCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guilherme\\Desktop\\EntregaIndividualJaneiro2024\\Kaioken\\Kaioken.csproj",
+  "projectFilePath": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\kaioken\\Kaioken.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
