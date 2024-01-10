@@ -1,12 +1,18 @@
 import styles from './card.module.css';
 
 
-export default async function Card() {
-	const cards = await fetch('http://localhost:7777').then(res => res.json());
-	console.log(cards);
+export async function getStaticProps() {
 
+	const getData = async () =>  {
+		const data = await fetch('http://localhost:7777')
+		return data.json()
+	  }
+	  	  
 	return (
+		
 		<div className={styles.container}>
+
+			<h1> Tabela de Viajantes</h1>
 			{cards?.map((card) => (
 				<div key={card.id} className={styles.card}>					
 					<div className={styles.card_title}>
@@ -15,5 +21,9 @@ export default async function Card() {
 				</div>
 			))}
 		</div>
+		
 	)
 }
+
+
+

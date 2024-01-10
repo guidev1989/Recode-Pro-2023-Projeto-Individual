@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\kaioken\\Kaioken.csproj": {}
+    "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\Kaioken\\Kaioken.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\kaioken\\Kaioken.csproj": {
+    "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\Kaioken\\Kaioken.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\kaioken\\Kaioken.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\Kaioken\\Kaioken.csproj",
         "projectName": "Kaioken",
-        "projectPath": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\kaioken\\Kaioken.csproj",
+        "projectPath": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\Kaioken\\Kaioken.csproj",
         "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\kaioken\\obj\\",
+        "outputPath": "C:\\Users\\Guilherme\\Documents\\Estudos\\Recode PRO\\Projeto individual\\site\\Recode-Pro-2023-Projeto-Individual\\ENTREGA_API_C#_NEXT\\BackEndC#\\Kaioken\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",

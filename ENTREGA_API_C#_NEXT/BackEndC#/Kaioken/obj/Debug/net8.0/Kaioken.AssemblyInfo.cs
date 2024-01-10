@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kaioken")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d50695465d13340659a48683608317a19cd751e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10906a7701d68bc47c2165d769e2b862c557937f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kaioken")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kaioken")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
